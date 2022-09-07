@@ -93,6 +93,9 @@
     .experiencia {
         grid-template-columns: 1fr;
         gap: 40px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 10px;
     }
 
     .experiencia .subtitulo {

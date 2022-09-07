@@ -1,3 +1,14 @@
+.mob-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.perfil-mob {
+    max-width: 15%;
+    display: none;
+
+}
+
 .marca {
     font-family: 'fira sans';
     font-size: 2.5rem;
@@ -55,10 +66,22 @@
         gap: 40px;
         padding: 20px;
     }
+}
+
+@media (max-width:460px) {
+    .perfil-mob {
+        min-width: 30%;
+        display: block;
+        height: 40%;
+    }
+}
 
     @media (max-width: 415px) {
         .header-menu {
             justify-content: center;
         }
+        .perfil-mob {
+            display: block;
+            height: 40%;
+        }
     }
-}
