@@ -1,0 +1,141 @@
+.footer {
+    background: black;
+}
+
+.footer-container {
+        max-width: 1200px;
+        padding: 120px 20px 60px 20px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 100px;
+        align-items: center;
+    }
+
+.footer-texto {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    color: #cccc;
+
+}
+
+.footer-contato{
+    display: flex;
+
+    gap: 30px;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.footer-contato .linkedin{
+    margin-left: 15px;
+}
+
+.footer-contato li {
+    font-weight: bold;
+    font-size: 2.25rem;
+    line-height: 1.1;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.footer-contato .linkedin {
+
+    width: 10%;
+    border: 4px solid white;
+    border-radius: 4px;
+
+}
+
+.footer-contato .whatsapp {
+    width: 15%;
+}
+
+.footer-contato .facebook {
+    width: 10%;
+    border: 4px solid white;
+    border-radius: 4px;
+}
+
+.footer-contato .aumenta:hover {
+    width: 12%;
+    transition: 0.5s;
+}
+
+.footer-contato .whatsapp:hover {
+    width: 18%;
+    transition: 0.5s;
+}
+
+
+.footer-copy {
+    font-size: 1.125rem;
+    color: #8f8f8f;
+    grid-column: 1/-1;
+    justify-self: center;
+}
+
+@media (max-width: 848px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-contato li {
+        font-size: 1.5rem;
+
+    }
+    
+    .footer-contato {
+        justify-content: center;
+    }
+
+    .footer-texto {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        padding: 60px 30px 30px 30px;
+    }
+
+    .footer-texto {
+        font-size: 1.125rem;
+    }
+
+    .footer-contato li {
+        font-size: 1.2rem;
+    }
+
+    .footer-copy {
+        font-size: 1rem;
+    }
+
+
+}
+
+@media (max-width: 407px){
+    .footer-contato {
+        gap: 10px;
+    }
+
+
+    .footer-contato .facebook {
+        max-width: 20%;
+    }
+
+    .footer-contato .whatsapp {
+        max-width: 25%;
+    }
+    
+    .footer-contato .linkedin {
+        max-width: 20%;
+    }
+
+}
+    
+    
